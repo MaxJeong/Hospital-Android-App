@@ -1,0 +1,114 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="PatientInfoTV">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_margin">2dp</item>
+	</style>
+    
+    <style name="Header">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+	</style>
+	
+    <style name="EditText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+	</style>
+	
+    <style name="Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center</item>
+	</style>
+
+        <!-- Style sheets for login page  -->
+    <style name="Login">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+    
+    <!--  Style for the Username and password box -->
+    <style name="EditText2">
+        <item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>		            
+		<item name="android:layout_margin">3dp</item>		            
+		<item name="android:textColorHint">@color/darkgray</item>
+		<item name="android:textColor">@color/darkgray</item>
+    	<item name="android:textSize">@dimen/activity_horizontal_margin</item>
+		
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="LoginButton">
+        <item name="android:background">@color/darkgray</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="Signup">
+        <item name="android:background">@color/bg_color</item>
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="SignupBox">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/lightgray</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:padding">3dp</item>
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="SignupBox.Split">
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/fg_color</item>
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="SignupBox.Top">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/usernamebox</item>
+    </style>
+    
+    <!--  Sign in button and sign up button -->
+    <style name="SignupBox.Bottom">
+        <item name="android:background">@drawable/passwordbox</item>
+    </style>
+    
+    <style name="SignupBoxTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hospital Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="user_name">Username</string>
+    <string name="password">Password</string>
+    <string name="submit">Sign In</string>
+    <string name="prompt_register">Register</string>
+    <string name="submit_register">Register</string>
+    
+    <string name="create_new_patient">New Patient</string>
+    <string name="patient_info"> Patient Information </string>
+    <string name="patient_name"> Name: </string>
+    <string name="patient_dob"> Date of Birth: </string>
+    <string name="patient_card"> Health Card Number: </string>
+    <string name="patient_age"> Age: </string>
+    <string name="patient_arrival_time"> Arrival Time: </string>
+    <string name="patient_urgency"> Urgency: </string>
+    <string name="TVseenbydoctor"> Arrival Time: </string>
+    
+    <string name="vitals_insert_header"> Vital Signs</string>
+    <string name="vitals_list_header"> List of Vital Signs</string>
+    <string name="vitals_insert_button"> Update</string>
+    <string name="vitals_info"> Patient Vital Signs: </string>
+    <string name="vitals_temp">Temperature</string>
+    <string name="vitals_systolic_BP">Systolic Blood Pressure </string>
+    <string name="vitals_diastolic_BP">Diabolic Blood Pressure</string>
+    <string name="vitals_heart_rate">Heart Rate</string>
+    
+    <string name="symptoms_description">Symptoms </string>
+    
+    <string name="patient_register">Register Patient</string>
+    <string name="submit_patient">Submit</string>
+    
+    <string name="list_all">Order All</string>
+    <string name="list_unseen_arrival_time">UnseenD [Time]</string>
+    <string name="list_unseen_urgency">UnseenD [Urgency]</string>
+    
+    <string name="seen_by_doctor">Seen by Doctor</string>
+    <string name="Medication_Name">Medication Name</string>
+    <string name="Medication_Instructions">Medication instructions</string>
+    
+    
+    <color name="bg_color">#fdfdfd</color>
+    <color name="fg_color">#33144803</color>
+    <color name="button_color">#171717</color>
+    <color name="text_color">#31D1F1</color>
+    <color name="darkgray">#313131</color>
+    <color name="lightgray">#e5e5e5</color>
+    <color name="lb">#33b5e5</color>
+	<color name="darkoj">#aa4c00</color>
+</resources>

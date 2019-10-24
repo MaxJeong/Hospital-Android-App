@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+       android:id="@+id/updatePatient"
+       style="@style/Header"
+       android:text="@string/vitals_insert_header"
+        />
+          
+    <EditText 
+        android:id="@+id/ETtemperature"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vitals_temp"  />
+
+    <EditText 
+        android:id="@+id/ETSystolicBP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vitals_systolic_BP"   />
+    
+    <EditText 
+        android:id="@+id/ETDiastolicBP"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vitals_diastolic_BP" />
+
+    <EditText
+        android:id="@+id/ETHeartRate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vitals_heart_rate"  />
+ 	
+	<Button 
+	    android:id="@+id/BTupdate_vital_signs"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:text="@string/vitals_insert_button"/>
+	
+	<ListView
+		android:id="@+id/LISTvitalSigns"
+		android:layout_width="fill_parent"
+		android:layout_margin="10dp"
+		android:layout_height="wrap_content"/>
+</LinearLayout>

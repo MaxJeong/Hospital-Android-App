@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hospital_icon"
+        android:label="@string/app_name"
+         >
+        <activity
+            android:name="frontend.LoginAuthentication"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.HomeScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="frontend.HomeScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.NewPatient"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="frontend.NewPatient" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.PatientView"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="frontend.PatientView" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.PatientMasterSwipe"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.RegisterScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="frontend.RegisterScreen" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="frontend.PatientPrescription"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="frontend.PatientPrescription" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

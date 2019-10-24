@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/patient_info"
+	        android:textSize="25sp"
+	        android:layout_gravity="center"
+	        android:textStyle="bold" />
+   
+	    <TextView
+		        android:id="@+id/TVhcn"
+		        style="@style/PatientInfoTV"
+		        android:text="@string/patient_card" />
+	    <TextView
+		        android:id="@+id/TVname"
+		        style="@style/PatientInfoTV"
+		        android:text="@string/patient_name" />
+	    <TextView
+		        android:id="@+id/TVdob"
+		         style="@style/PatientInfoTV"
+		        android:text="@string/patient_dob" />
+	    <TextView
+		        android:id="@+id/TVarrivaltime"
+		        style="@style/PatientInfoTV"
+		        android:text="@string/patient_arrival_time" />
+	    <TextView
+		        android:id="@+id/TVurgency"
+		        style="@style/PatientInfoTV"
+		        android:text="@string/patient_urgency" />
+	    <TextView
+		        android:id="@+id/TVseenbydoctor"
+		        style="@style/PatientInfoTV"
+		        android:text="@string/seen_by_doctor" />
+	    <Button
+	            android:id="@+id/BTSeenByDoctor"
+			    android:layout_width="wrap_content"
+			    android:layout_marginTop="10dp"
+			    android:layout_gravity="center"
+			    android:layout_height="wrap_content"
+			    android:text="@string/seen_by_doctor"
+	    	/>
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout 
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        >
+        <LinearLayout
+            android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight="60" >
+              <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/patient_info"
+		        android:textSize="20sp"
+		        android:textStyle="bold" />
+    
+		    <TextView
+			        android:id="@+id/TVhcn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patient_card" />
+		    <TextView
+			        android:id="@+id/TVname"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patient_name" />
+		    <TextView
+			        android:id="@+id/TVdob"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patient_dob" />
+		    <TextView
+			        android:id="@+id/TVarrivaltime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patient_arrival_time" />
+		    <TextView
+			        android:id="@+id/TVurgency"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/patient_urgency" />
+		    <TextView
+			        android:id="@+id/TVseenbydoctor"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/seen_by_doctor" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical"
+	        android:layout_weight="40" >
+                <Button
+                    android:id="@+id/BTSeenByDoctor"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/seen_by_doctor"
+			       	/>
+                <Button
+                    android:id="@+id/BTPrescription"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Prescription"
+			       	/>
+        </LinearLayout>
+    </LinearLayout>
+ 	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical"
+	    android:weightSum="100">
+	    <LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="0dip"
+	 		android:orientation="horizontal"
+	 		android:weightSum="100"
+	 		android:layout_weight="60" >
+	 	     <LinearLayout
+	 	        android:layout_width="0dip"
+	 	        android:layout_height="fill_parent"
+	 	        android:orientation="vertical"
+	 	        android:layout_weight="40" >
+ 	            <TextView
+ 	                android:id="@+id/updatePatient"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/vitals_insert_header"
+			        android:textStyle="bold" />
+ 	            
+		 	    <EditText 
+		 	        android:id="@+id/ETtemperature"
+		 	        android:layout_width="fill_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:hint="@string/vitals_temp"  />
+		 	
+		 	    <EditText 
+		 	        android:id="@+id/ETSystolicBP"
+		 	        android:layout_width="fill_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:hint="@string/vitals_systolic_BP"   />
+		 	    
+		 	    <EditText 
+		 	        android:id="@+id/ETDiastolicBP"
+		 	        android:layout_width="fill_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:hint="@string/vitals_diastolic_BP" />
+
+		 	    <EditText
+		 	        android:id="@+id/ETHeartRate"
+		 	        android:layout_width="fill_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:hint="@string/vitals_heart_rate"  />
+				 	
+			 	<Button 
+			 	    android:id="@+id/BTupdate_vital_signs"
+			 	    android:layout_width="wrap_content"
+			 	    android:layout_height="wrap_content"
+			 	    android:text="@string/vitals_insert_button"/>
+	 		</LinearLayout>
+	 	     	<ListView
+					android:id="@+id/LISTvitalSigns"
+					android:layout_width="0dip"
+					android:layout_height="wrap_content"
+					android:layout_weight="60" />
+	 	</LinearLayout>
+	 	<LinearLayout
+	 		android:layout_width="fill_parent"
+	 		android:layout_height="0dip"
+	 		android:orientation="horizontal"
+	 		android:weightSum="100"
+	 		android:layout_weight="40"
+	 		>
+	 	    <LinearLayout
+	 	        android:layout_width="0dip"
+	 	        android:layout_height="fill_parent"
+	 	        android:orientation="vertical"
+	 	        android:layout_weight="40"
+	 	        >
+	 	        <TextView
+	 	            android:id="@+id/symptoms"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/symptoms_description"
+			        android:textStyle="bold" />
+			 	
+		 	    <EditText 
+		 	        android:id="@+id/ETSymptom"
+		 	        android:layout_width="fill_parent"
+		 	        android:layout_height="wrap_content"
+		 	        android:hint="@string/symptoms_description" />
+			 	
+			 	<Button 
+			 	    android:id="@+id/BTupdate_symptoms"
+			 	    android:layout_width="wrap_content"
+			 	    android:layout_height="wrap_content"
+			 	    android:text="@string/vitals_insert_button"/>
+	 	    </LinearLayout>
+			<ListView
+				android:id="@+id/LISTsymptoms"
+				android:layout_width="0dip"
+				android:layout_height="wrap_content"
+				android:layout_weight="60" />
+	 	</LinearLayout>
+	</LinearLayout>
+	    
+ 	
+</LinearLayout>
